@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fbfcfd;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Proxima Nova", sans-serif;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(216, 216, 216);
+    border-radius: 15px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(14, 139, 211);
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(15, 156, 238, 0.705);
+}
+.card_container {
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(134, 133, 133, 0.493),
+    0 6px 20px 0 rgba(134, 133, 133, 0.493);
+  color: #4d5055;
+  padding: 0px 15px;
+}
+.card_container .details_container {
+  padding: 10px 10px;
+  width: 25vw;
+  border-right: 1px solid #e6e6e6;
+}
+.avatar_image .avatar {
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.d-block {
+  display: block !important;
+}
+.bold_text {
+  font-weight: bold;
+}
+.card_container .appointment_selection_container {
+  padding: 10px 15px;
+}
+.timeframes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 25vw;
+  margin-top: 100px;
+  overflow-y: scroll;
+}
+.timeframe_data {
+  cursor: pointer;
+  margin: 8px 0;
+  width: 160px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  color: rgb(14, 139, 211);
+  border: 1px solid rgba(0, 162, 255, 0.5);
+}
+.timeframe_data_confirm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 160px;
+    margin: 8px 0;
+}
+.timeframe_data_confirm div {
+    padding: 12px;
+}
+.timeframe_data_confirm div:nth-child(1) {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-color: #00000000;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px 20px;
+}
+.timeframe_data_confirm div:nth-child(2) {
+    cursor: pointer;
+    background-color: rgba(0, 162, 255, 0.5);
+    color: #fff;
+    border-color: #00000000;
+    border-radius: 5px;
+    padding: 12px 20px;
+}
